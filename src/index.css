@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Averia+Sans+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans";
+}
+
+/* 1. Фон на весь экран (центрирует контент) */
+.app-background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Занимает всю высоту экрана */
+  background-color: #e0e0e0; /* Цвет полей вокруг приложения на больших экранах */
+}
+
+/* 2. Само ваше приложение */
+.app-container {
+  position: relative;
+
+  width: 100%;
+  max-width: 430px; /* Стандартная ширина большого смартфона (например, iPhone 14 Pro Max) */
+  height: 932px;
+  background-color: #ffffff; /* Цвет фона самого приложения */
+
+  /* Делаем так, чтобы контент скроллился внутри этой обертки, а не весь экран */
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  /* Тень, чтобы визуально отделить приложение от фона на больших экранах */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+
+  /* ОЧЕНЬ ВАЖНО ДЛЯ МОБИЛОК: Учитываем "челки" (notches) и нижние полоски */
+  padding-top: env(safe-area-inset-top);
+  padding-bottom: env(safe-area-inset-bottom);
+  padding-left: env(safe-area-inset-left);
+  padding-right: env(safe-area-inset-right);
+  display: flex;
+  flex-direction: column;
+}

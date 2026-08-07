@@ -1,0 +1,40 @@
+.wrapper {
+  margin-top: 32px;
+  display: flex;
+  align-items: center; /* Центрируем элементы по вертикали */
+  background-color: #f5f5f5; /* Светло-серый фон как на фото */
+  border-radius: 12px; /* Закругленные углы */
+  padding: 12px 16px; /* Внутренние отступы */
+  width: 100%;
+  max-width: 400px; /* Ограничиваем ширину */
+  box-sizing: border-box;
+}
+.wrapper input {
+  width: 376.55px;
+  height: 40px;
+  border: none; /* Убираем стандартную рамку */
+  background: transparent; /* Делаем фон прозрачным */
+  outline: none; /* Убираем синюю обводку при клике */
+  font-size: 18px;
+  color: #333;
+  flex-grow: 1; /* Заставляем input занять всё свободное место между иконками */
+  margin: 0 12px; /* Отступы от иконок */
+}
+
+/* Базовые стили для иконок */
+.icon {
+  width: 24px;
+  height: 24px;
+  color: #888; /* Цвет иконок */
+  flex-shrink: 0; /* Запрещаем иконкам сжиматься */
+  cursor: pointer; /* Делаем курсор-указатель при наведении (опционально) */
+}
+
+/* Эффект при наведении на иконки (по желанию) */
+.icon:hover {
+  color: #555;
+}
+
+.search-container input::placeholder {
+  color: #999;
+}

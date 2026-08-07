@@ -1,0 +1,28 @@
+.bottomMenu {
+  position: fixed; /* Намертво прибиває меню до низу .appContainer */
+  bottom: 0;
+  left: auto;
+  width: 430px;
+  height: 83px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 100; /* Щоб меню завжди було поверх тексту */
+}
+
+.menuItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  color: #000;
+  transition: all 0.25s ease;
+}
+
+.active {
+  background-color: #0b8fac;
+  color: #ffffff;
+}

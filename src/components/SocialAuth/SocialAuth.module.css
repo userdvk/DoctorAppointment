@@ -1,0 +1,39 @@
+.socialAuthWrapper {
+  display: flex;
+  flex-direction: column;
+}
+.socialAuthWrapper span {
+  display: flex;
+  justify-content: center;
+
+  font-family: "Averia Sans Libre";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 100%;
+  /* identical to box height, or 22px */
+  text-align: center;
+  letter-spacing: -0.02em;
+  margin-top: 29px;
+  /* gray */
+  color: #858585;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 19px;
+}
+
+.icon {
+  box-sizing: border-box;
+  cursor: pointer;
+
+  /* light */
+  border: 1px solid #d2ebe7;
+  border-radius: 100px;
+  padding: 10px;
+}
+.iconspace {
+  margin-left: 29px;
+}

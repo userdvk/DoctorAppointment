@@ -1,0 +1,31 @@
+.formlabel {
+  display: block;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 100%;
+
+  letter-spacing: -0.02em;
+
+  /* black */
+  color: #000000;
+}
+.formlabel:not(:first-child) {
+  margin-top: 26px;
+}
+
+.formInput {
+  margin-top: 18px;
+  width: 376px;
+  height: 50px;
+  padding: 21px 0 21px 23px;
+  box-sizing: border-box;
+  background: rgba(217, 217, 217, 0.3);
+  border: 1px solid rgba(133, 133, 133, 0.3);
+  border-radius: 10px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 100%;
+  color: #858585;
+}

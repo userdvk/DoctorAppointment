@@ -1,0 +1,15 @@
+.btn {
+  width: 376.55px;
+  height: 60px;
+  font-size: 22px;
+  color: #fff;
+
+  /* primary */
+  background: #0b8fac;
+  border-radius: 10px;
+  border: 0;
+  cursor: pointer;
+}
+.btnGroup {
+  margin-top: 30px;
+}

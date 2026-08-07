@@ -1,0 +1,23 @@
+.restore {
+  display: flex;
+  justify-content: center;
+  margin-top: 38px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  /* identical to box height */
+
+  /* gray */
+  color: #858585;
+}
+
+.restorelink {
+  color: #0b8fac;
+  cursor: pointer;
+}
+
+.SignUpform {
+  margin: 0;
+}

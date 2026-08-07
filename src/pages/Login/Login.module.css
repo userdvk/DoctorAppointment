@@ -1,0 +1,63 @@
+.signIn {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 100%;
+  /* identical to box height, or 26px */
+  letter-spacing: -0.02em;
+
+  /* black */
+  color: #000000;
+}
+.description {
+  margin-top: 25px;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 100%;
+  /* or 18px */
+  letter-spacing: -0.02em;
+
+  /* gray */
+  color: #858585;
+}
+
+form {
+  margin-top: 62px;
+}
+
+.forgetPassword {
+  cursor: pointer;
+  margin-top: 16px;
+  display: block;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 100%;
+  /* identical to box height, or 18px */
+  letter-spacing: -0.02em;
+  text-align: right;
+  /* black */
+  color: #000000;
+}
+
+.restore {
+  display: flex;
+  justify-content: center;
+  margin-top: 38px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  /* identical to box height */
+
+  /* gray */
+  color: #858585;
+}
+
+.restorelink {
+  color: #0b8fac;
+  cursor: pointer;
+}

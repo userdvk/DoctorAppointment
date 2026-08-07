@@ -1,0 +1,14 @@
+.loader {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 430px; /* Стандартная ширина большого смартфона (например, iPhone 14 Pro Max) */
+  height: 932px;
+  margin: 0 auto;
+}
+.loader img {
+  width: 253px;
+  height: 242px;
+}

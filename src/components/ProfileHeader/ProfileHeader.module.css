@@ -1,0 +1,27 @@
+.wrapper {
+  display: flex;
+}
+
+.GreetingText {
+  display: flex;
+  flex-direction: column;
+  padding-left: 10px;
+}
+.GreetingText p {
+  padding-top: 16px;
+  font-size: 14px;
+  color: #858585;
+}
+.GreetingText span {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.1px;
+}
+.notification {
+  margin-left: auto;
+  margin-top: 16px;
+  cursor: pointer;
+}

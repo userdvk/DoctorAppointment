@@ -1,0 +1,19 @@
+.title {
+  margin: 0 auto;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 100%;
+  text-align: center;
+  letter-spacing: -0.02em;
+  margin-bottom: 37px;
+  /* primary */
+  color: #0b8fac;
+}
+
+.wrapper {
+  margin: 42px 24px 27px 32px;
+  display: flex;
+  flex-direction: column;
+}
