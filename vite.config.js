@@ -12,7 +12,18 @@ export default defineConfig({
         name: "DoctorApp",
         short_name: "Doctor Appointmets ",
         theme_color: "#000000",
-        icons: [],
+        icons: [
+          {
+            src: "/Logo.png",
+            sizes: "192x192",
+            type: "image/png",
+          },
+          {
+            src: "/Logo.png",
+            sizes: "512x512",
+            type: "image/png",
+          },
+        ],
       },
     }),
   ],
