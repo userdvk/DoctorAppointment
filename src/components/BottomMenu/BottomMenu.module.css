@@ -1,15 +1,17 @@
 .bottomMenu {
-  position: fixed; /* Намертво прибиває меню до низу .appContainer */
+  position: fixed;
   bottom: 0;
-  left: auto;
-  max-width: 430px;
-  width: 430px;
-  height: 83px;
+  left: 50%;
+  transform: translateX(
+    -50%
+  ); /* Сдвигает элемент на половину его ширины назад, центрируя его */
+  width: 100%;
+  max-width: 430px; /* Должно совпадать с максимальной шириной вашего контейнера телефона */
   background-color: #ffffff;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  z-index: 100; /* Щоб меню завжди було поверх тексту */
+  z-index: 100;
 }
 
 .menuItem {
