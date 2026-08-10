@@ -10,7 +10,7 @@ export default defineConfig({
       registerType: "autoUpdate",
       manifest: {
         name: "DoctorApp",
-        short_name: "Doctor Appointmets ",
+        short_name: "Doctor Appointments",
         theme_color: "#000000",
         icons: [
           {
@@ -21,6 +21,19 @@ export default defineConfig({
           {
             src: "/512x512.png",
             sizes: "512x512",
+            type: "image/png",
+          },
+        ],
+        screenshots: [
+          {
+            src: "/1280x800.png",
+            sizes: "1280x800",
+            type: "image/png",
+            form_factor: "wide",
+          },
+          {
+            src: "/screenshots/mobile.png",
+            sizes: "390x844",
             type: "image/png",
           },
         ],
