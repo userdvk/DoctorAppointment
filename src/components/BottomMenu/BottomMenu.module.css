@@ -2,7 +2,8 @@
   position: fixed; /* Намертво прибиває меню до низу .appContainer */
   bottom: 0;
   left: auto;
-  width: 100%;
+  max-width: 430px;
+  width: 430px;
   height: 83px;
   background-color: #ffffff;
   display: flex;
