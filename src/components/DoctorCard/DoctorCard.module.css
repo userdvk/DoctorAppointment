@@ -2,6 +2,7 @@
   background-color: #7bc1b740;
   padding: 15px;
   display: flex;
+  margin: 25px 0 25px 0;
 }
 
 .photo {
@@ -15,7 +16,7 @@
     /* Jorem ipsum dolor, consectetur adipiscing elit. Nunc v libero et velit interdum, ac mattis. */
     font-style: normal;
     font-weight: 400;
-    font-size: 12px;
+    font-size: 13px;
     line-height: 100%;
     margin-top: 18px;
 
@@ -27,6 +28,6 @@
 .name {
   font-style: normal;
   font-weight: 600;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 100%;
 }

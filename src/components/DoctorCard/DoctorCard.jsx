@@ -10,7 +10,7 @@ export default function DoctorCard() {
         <span className={cls.name}>Dr.Pawan</span>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem
-          corporis, iste unde ipsum dolore iure perspiciatis asperiores
+          corporis, iste unde ipsum
         </p>
       </div>
     </div>

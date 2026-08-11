@@ -4,6 +4,9 @@ export default function DoctorList() {
   return (
     <div>
       <DoctorCard />
+      <DoctorCard />
+      <DoctorCard />
+      <DoctorCard />
     </div>
   );
 }
