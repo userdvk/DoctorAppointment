@@ -1,0 +1,32 @@
+.card {
+  background-color: #7bc1b740;
+  padding: 15px;
+  display: flex;
+}
+
+.photo {
+  width: 138px;
+}
+.info {
+  margin-top: 27px;
+  padding-left: 25px;
+  p {
+    color: #858585;
+    /* Jorem ipsum dolor, consectetur adipiscing elit. Nunc v libero et velit interdum, ac mattis. */
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 100%;
+    margin-top: 18px;
+
+    /* or 12px */
+    letter-spacing: -0.02em;
+  }
+}
+
+.name {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 100%;
+}

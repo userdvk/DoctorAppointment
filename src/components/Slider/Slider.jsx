@@ -21,11 +21,19 @@ export function Slider() {
             slidesPerView: 2,
           },
         }}
+        style={{
+          paddingBottom: "25px",
+        }}
       >
         <SwiperSlide>
           <img src={slider} />
         </SwiperSlide>
-        <SwiperSlide>2</SwiperSlide>
+        <SwiperSlide>
+          <img src={slider} />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={slider} />
+        </SwiperSlide>
       </Swiper>
     </div>
   );
