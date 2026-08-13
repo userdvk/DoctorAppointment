@@ -1,9 +1,8 @@
 import DoctorCard from "../DoctorCard/DoctorCard";
-import cls from "./DoctorList.module.css";
 
 export default function DoctorList() {
   return (
-    <div className={cls.listWrapper}>
+    <div>
       <DoctorCard />
       <DoctorCard />
       <DoctorCard />

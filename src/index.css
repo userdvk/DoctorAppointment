@@ -1,41 +1,46 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Averia+Sans+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
 * {
   margin: 0;
   padding: 0;
-  font-family: "Open Sans";
+  box-sizing: border-box; /* Важно для корректного расчета размеров с padding */
+  font-family: "Open Sans", sans-serif;
 }
 
-/* 1. Фон на весь экран (центрирует контент) */
+/* 1. Фон на весь экран */
 .app-background {
   display: flex;
   justify-content: center;
-  align-items: center;
-  min-height: 100dvh; /* Занимает всю высоту экрана */
-  background-color: #e0e0e0; /* Цвет полей вокруг приложения на больших экранах */
+  align-items: flex-start; /* Изменено с center на flex-start, чтобы контент скроллился естественно */
+  min-height: 100dvh; /* Динамическая высота экрана (учитывает панели Safari) */
+  background-color: #e0e0e0;
 }
 
-/* 2. Само ваше приложение */
+/* 2. Контейнер приложения */
 .app-container {
   position: relative;
-
   width: 100%;
-  max-width: 430px; /* Стандартная ширина большого смартфона (например, iPhone 14 Pro Max) */
-  height: 932px;
-  background-color: #ffffff; /* Цвет фона самого приложения */
+  max-width: 430px;
 
-  /* Делаем так, чтобы контент скроллился внутри этой обертки, а не весь экран */
-  overflow-y: auto;
-  overflow-x: hidden;
+  /* ИСПРАВЛЕНИЕ 1: Вместо height: 932px делаем минимальную высоту в 100dvh */
+  min-height: 100dvh;
 
-  /* Тень, чтобы визуально отделить приложение от фона на больших экранах */
+  background-color: #ffffff;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 
-  /* ОЧЕНЬ ВАЖНО ДЛЯ МОБИЛОК: Учитываем "челки" (notches) и нижние полоски */
+  /* ИСПРАВЛЕНИЕ 2: Убираем overflow-y: auto! 
+     Скроллиться должна сама страница, а не внутренний div */
+  overflow-x: hidden;
+
+  /* Безопасные зоны для iPhone */
   padding-top: env(safe-area-inset-top);
-  padding-bottom: env(safe-area-inset-bottom);
   padding-left: env(safe-area-inset-left);
   padding-right: env(safe-area-inset-right);
+
+  /* ИСПРАВЛЕНИЕ 3: Добавляем запас снизу (высота вашего меню + safe area) */
+  padding-bottom: calc(80px + env(safe-area-inset-bottom));
+
   display: flex;
   flex-direction: column;
 }
