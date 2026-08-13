@@ -1,4 +1,4 @@
-import useDoctors from "../../hooks/UseDoctors";
+import useDoctors from "../../hooks/useDoctors";
 import DoctorCard from "../DoctorCard/DoctorCard";
 export default function DoctorList() {
   const [doctors] = useDoctors();
