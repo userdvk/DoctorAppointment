@@ -1,0 +1,12 @@
+.btn {
+  width: 79px;
+  height: 28px;
+  font-size: 16px;
+  color: #fff;
+
+  /* primary */
+  background: #0b8fac;
+  border-radius: 10px;
+  border: 0;
+  cursor: pointer;
+}
