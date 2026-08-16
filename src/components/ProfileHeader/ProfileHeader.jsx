@@ -4,13 +4,15 @@ import Ellipse from "../../assets/Ellipse.png";
 import Notification from "../../assets/Notification.png";
 import { useContext } from "react";
 import { AuthContext } from "../../context/AuthContext";
+import { useNavigate } from "react-router-dom";
 
 export function ProfileHeader() {
+  const navigate = useNavigate();
   const user = useContext(AuthContext);
 
   return (
     <div className={cls.wrapper}>
-      <div>
+      <div className={cls.photo} onClick={() => navigate("/PersonalDetails")}>
         <img src={Ellipse} />
       </div>
       <div className={cls.GreetingText}>

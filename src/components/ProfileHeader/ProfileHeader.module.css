@@ -1,7 +1,9 @@
 .wrapper {
   display: flex;
 }
-
+.photo {
+  cursor: pointer;
+}
 .GreetingText {
   display: flex;
   flex-direction: column;

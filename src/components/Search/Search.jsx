@@ -1,6 +1,11 @@
 import cls from "./Search.module.css";
 
-export function Search() {
+export function Search({ setSerchQuery }) {
+  const onChangeHandler = (e) => {
+    e.preventDefault();
+    setSerchQuery(e.target.value);
+  };
+
   return (
     <div className={cls.wrapper}>
       <svg
@@ -15,7 +20,12 @@ export function Search() {
         <circle cx="11" cy="11" r="8"></circle>
         <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
       </svg>
-      <input type="text" name="search" placeholder="Search a Doctor" />
+      <input
+        type="text"
+        name="search"
+        placeholder="Search a Doctor"
+        onChange={onChangeHandler}
+      />
     </div>
   );
 }

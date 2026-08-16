@@ -11,6 +11,7 @@ import { Profile } from "./pages/Profile/Profile";
 import { PersonalDetails } from "./pages/Profile/PersonalDetails/PersonalDetails";
 
 import useGetUser from "./hooks/useGetUser";
+import AppointmentDetailes from "./pages/AppointmentDetailes/AppointmentDetailes";
 
 function App() {
   const [user, isLoading] = useGetUser();
@@ -28,6 +29,7 @@ function App() {
               <Route path="/" element={<Homepage />} />
               <Route path="/profile" element={<Profile />} />
               <Route path="/PersonalDetails" element={<PersonalDetails />} />
+              <Route path="/doctor/:id" element={<AppointmentDetailes />} />
             </Route>
 
             <Route element={<GuestRoute />}>
