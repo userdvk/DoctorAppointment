@@ -1,0 +1,53 @@
+.header {
+  display: flex;
+}
+.photo img {
+  width: 139px;
+  border-radius: 10%;
+}
+
+.nameWrap {
+  margin-left: 21px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.name {
+  display: flex;
+}
+.chatBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  margin-left: 17px;
+  background-color: #7bc1b740;
+  border-radius: 50%;
+}
+
+.status {
+  margin-top: 10px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 100%;
+  /* identical to box height, or 16px */
+  text-transform: capitalize;
+
+  /* secandary */
+  color: #7bc1b7;
+}
+
+.payment span {
+  display: block;
+}
+
+.payment {
+  margin-top: 32px;
+  display: flex;
+}
