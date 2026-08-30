@@ -1,12 +1,12 @@
 import { NavLink } from "react-router-dom";
-import { Button } from "../../components/Button/Button";
-import { Input } from "../../components/Input/Input";
-import { SocialAuth } from "../../components/SocialAuth/SocialAuth";
+import { Button } from "../../components/ui/Button/Button";
+import { Input } from "../../components/ui/Input/Input";
+import { SocialAuth } from "../../components/features/SocialAuth/SocialAuth";
 import cls from "./SignUp.module.css";
 import { useForm } from "react-hook-form";
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../../firebase";
-import { PageContainer } from "../../components/PageContainer/PageContainer";
+import { PageContainer } from "../../components/layout/PageContainer/PageContainer";
 export function SignUp() {
   const { register, handleSubmit } = useForm();
 

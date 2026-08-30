@@ -1,9 +1,9 @@
 import { Outlet } from "react-router-dom";
 // import Iphone from "../../assets/iPhonebar.png";
 
-import { BottomMenu } from "../BottomMenu/BottomMenu";
+import { BottomMenu } from "../../features/BottomMenu/BottomMenu";
 import { useContext } from "react";
-import { AuthContext } from "../../context/AuthContext";
+import { AuthContext } from "../../../context/AuthContext";
 export function MainLayout() {
   const user = useContext(AuthContext);
 

@@ -1,12 +1,12 @@
 import cls from "./Profile.module.css";
 import Ellipse from "../../assets/Ellipse.png";
-import { ProfileMenuItem } from "../../components/ProfileMenuItem/ProfileMenuItem";
+import { ProfileMenuItem } from "../../components/features/ProfileMenuItem/ProfileMenuItem";
 
 import { IoIosLogOut } from "react-icons/io";
 import { FaRegUserCircle } from "react-icons/fa";
 import { signOut } from "firebase/auth";
 import { auth } from "../../firebase";
-import { PageContainer } from "../../components/PageContainer/PageContainer";
+import { PageContainer } from "../../components/layout/PageContainer/PageContainer";
 import { useNavigate } from "react-router-dom";
 import { useContext } from "react";
 import { AuthContext } from "../../context/AuthContext";

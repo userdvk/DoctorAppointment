@@ -1,7 +1,7 @@
 import cls from "./DoctorCard.module.css";
 import { FaStar } from "react-icons/fa";
 
-import { ButtonCard } from "../ButtonCard/ButtonCard";
+import { ButtonCard } from "../../ui/ButtonCard/ButtonCard";
 import { Link } from "react-router-dom";
 export default function DoctorCard({ name, description, photo, rating, id }) {
   return (

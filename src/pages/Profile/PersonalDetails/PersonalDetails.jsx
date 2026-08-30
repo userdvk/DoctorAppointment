@@ -1,13 +1,13 @@
-import { PageContainer } from "../../../components/PageContainer/PageContainer";
+import { PageContainer } from "../../../components/layout/PageContainer/PageContainer";
 import Ellipse from "../../../assets/Ellipse.png";
 import cls from "./PersonalDetails.module.css";
 
-import { EditableField } from "../../../components/EditableField/EditableField";
+import { EditableField } from "../../../components/ui/EditableField/EditableField";
 import { FaRegUserCircle } from "react-icons/fa";
 import { MdOutlineAlternateEmail } from "react-icons/md";
 import { MdOutlinePhone } from "react-icons/md";
 import { BsCalendar2Date } from "react-icons/bs";
-import { Button } from "../../../components/Button/Button";
+import { Button } from "../../../components/ui/Button/Button";
 import { useForm } from "react-hook-form";
 import { useContext, useEffect } from "react";
 import { AuthContext } from "../../../context/AuthContext";

@@ -1,5 +1,5 @@
 import cls from "./Slider.module.css";
-import slider from "../../assets/slider.png";
+import slider from "../../../assets/slider.png";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Стили Swiper

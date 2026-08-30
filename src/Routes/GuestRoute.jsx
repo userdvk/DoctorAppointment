@@ -1,12 +1,12 @@
 import { useContext } from "react";
-import { AuthContext } from "../../context/AuthContext";
+import { AuthContext } from "../context/AuthContext";
 import { Navigate, Outlet } from "react-router-dom";
 
-export function PrivateRoute() {
+export function GuestRoute() {
   const user = useContext(AuthContext);
 
-  if (!user) {
-    return <Navigate to={"/login"} />;
+  if (user) {
+    return <Navigate to={"/"} />;
   }
 
   return <Outlet />;

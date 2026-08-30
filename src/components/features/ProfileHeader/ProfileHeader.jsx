@@ -1,9 +1,9 @@
 import cls from "./ProfileHeader.module.css";
 
-import Ellipse from "../../assets/Ellipse.png";
-import Notification from "../../assets/Notification.png";
+import Ellipse from "../../../assets/Ellipse.png";
+import Notification from "../../../assets/Notification.png";
 import { useContext } from "react";
-import { AuthContext } from "../../context/AuthContext";
+import { AuthContext } from "../../../context/AuthContext";
 import { useNavigate } from "react-router-dom";
 
 export function ProfileHeader() {

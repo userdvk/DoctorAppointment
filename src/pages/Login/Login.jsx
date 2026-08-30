@@ -1,12 +1,12 @@
 import { NavLink, useNavigate } from "react-router-dom";
-import { Button } from "../../components/Button/Button";
-import { SocialAuth } from "../../components/SocialAuth/SocialAuth";
+import { Button } from "../../components/ui/Button/Button";
+import { SocialAuth } from "../../components/features/SocialAuth/SocialAuth";
 import cls from "./Login.module.css";
 import { useForm } from "react-hook-form";
-import { Input } from "../../components/Input/Input";
+import { Input } from "../../components/ui/Input/Input";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../../firebase";
-import { PageContainer } from "../../components/PageContainer/PageContainer";
+import { PageContainer } from "../../components/layout/PageContainer/PageContainer";
 
 export function Login() {
   const navigate = useNavigate();

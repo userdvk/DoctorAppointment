@@ -1,9 +1,9 @@
-import { ProfileHeader } from "../../components/ProfileHeader/ProfileHeader";
+import { ProfileHeader } from "../../components/features/ProfileHeader/ProfileHeader";
 import cls from "./Homepage.module.css";
-import { Search } from "../../components/Search/Search";
-import { Slider } from "../../components/Slider/Slider";
-import ContentWrapper from "../../components/ContentWrapper/ContentWrapper";
-import DoctorList from "../../components/DoctorList/DoctorList";
+import { Search } from "../../components/ui/Search/Search";
+import { Slider } from "../../components/ui/Slider/Slider";
+import ContentWrapper from "../../components/layout/ContentWrapper/ContentWrapper";
+import DoctorList from "../../components/features/DoctorList/DoctorList";
 import { useState } from "react";
 
 export function Homepage() {
