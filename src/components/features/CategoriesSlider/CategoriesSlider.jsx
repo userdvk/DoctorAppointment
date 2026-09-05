@@ -1,8 +1,5 @@
-import { useState } from "react";
 import cls from "./CategoriesSlider.module.css";
-export function CategoriesSlider({ setActiveCategory }) {
-  const [catId, setCatId] = useState("All");
-
+export function CategoriesSlider({ setActiveCategory, activeCategory }) {
   const categories = [
     { id: "all", name: "All" },
     { id: "dentist", name: "Dentist" },
@@ -12,13 +9,16 @@ export function CategoriesSlider({ setActiveCategory }) {
   ];
 
   const handleCategoryClick = (cat) => {
-    setCatId(cat);
     setActiveCategory(cat.name);
   };
   return (
-    <div>
+    <div className={cls.wrap}>
       {categories.map((cat) => (
-        <button key={cat.id} onClick={() => handleCategoryClick(cat)}>
+        <button
+          className={`${cls.btn} ${activeCategory === cat.name ? cls.active : ""}`}
+          key={cat.id}
+          onClick={() => handleCategoryClick(cat)}
+        >
           {cat.name}
         </button>
       ))}

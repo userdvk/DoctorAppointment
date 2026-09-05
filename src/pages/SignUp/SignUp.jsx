@@ -14,7 +14,7 @@ export function SignUp() {
     try {
       await createUserWithEmailAndPassword(auth, data.email, data.password);
     } catch (err) {
-      console.log(err);
+      console.log(err.code);
     }
   };
 

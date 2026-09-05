@@ -1,0 +1,25 @@
+.wrap {
+  display: flex;
+  gap: 15px;
+  overflow-x: auto;
+  scrollbar-width: none;
+  scroll-behavior: smooth;
+}
+.btn {
+  flex: 0 0 auto;
+  width: 149px;
+  height: 80px;
+  border: none;
+  background-color: #7bc1b7;
+  color: #fff;
+  font-size: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-style: normal;
+  font-weight: 600;
+  text-transform: capitalize;
+  line-height: 100%;
+}
+.active {
+  background-color: #509489;
+}

@@ -18,7 +18,12 @@ export function Homepage() {
       <ProfileHeader />
       <Search setSerchQuery={setSerchQuery} />
       <Slider />
-      <CategoriesSlider setActiveCategory={setActiveCategory} />
+      <ContentWrapper title={"Categories"}>
+        <CategoriesSlider
+          setActiveCategory={setActiveCategory}
+          activeCategory={activeCategory}
+        />
+      </ContentWrapper>
       <ContentWrapper title="All Doctors">
         <DoctorList serchQuery={serchQuery} activeCategory={activeCategory} />
       </ContentWrapper>
