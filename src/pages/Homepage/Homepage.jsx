@@ -11,8 +11,6 @@ export function Homepage() {
   const [serchQuery, setSerchQuery] = useState("");
   const [activeCategory, setActiveCategory] = useState("All");
 
-  console.log(activeCategory);
-
   return (
     <div className={cls.homeWrapper}>
       <ProfileHeader />
