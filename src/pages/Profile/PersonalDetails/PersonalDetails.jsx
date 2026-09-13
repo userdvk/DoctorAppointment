@@ -9,15 +9,21 @@ import { MdOutlinePhone } from "react-icons/md";
 import { BsCalendar2Date } from "react-icons/bs";
 import { Button } from "../../../components/ui/Button/Button";
 import { useForm } from "react-hook-form";
-import { useContext, useEffect } from "react";
+import { useContext, useEffect, useRef, useState } from "react";
 import { AuthContext } from "../../../context/AuthContext";
 import { doc, setDoc } from "firebase/firestore";
 import { db } from "../../../firebase";
 
 export function PersonalDetails() {
   const user = useContext(AuthContext);
-
+  const fileInputRef = useRef(null);
+  const [previewUrl, setpreviewUrl] = useState(null);
   const { register, handleSubmit, reset } = useForm();
+
+  const handleImageChange = (e) => {
+    const file = e.target.files[0];
+    file ? setpreviewUrl(URL.createObjectURL(file)) : "";
+  };
 
   useEffect(() => {
     if (user) {
@@ -51,7 +57,18 @@ export function PersonalDetails() {
   };
   return (
     <PageContainer title={"Personal Details"}>
-      <img src={Ellipse} className={cls.profileImage} />
+      <img
+        src={previewUrl || Ellipse}
+        className={cls.profileImage}
+        onClick={() => fileInputRef.current.click()}
+      />
+      <input
+        type="file"
+        ref={fileInputRef}
+        style={{ display: "none" }}
+        accept="image/*"
+        onClick={handleImageChange}
+      />
 
       <form
         className={cls.PersonalDetailsFrom}
